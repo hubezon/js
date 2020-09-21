@@ -1,0 +1,10 @@
+var colorChanger = document.getElementById("contentholder");
+
+const randNum = () => Math.floor(Math.random() * 256);
+
+function changeColor() {
+    colorChanger.style.backgroundColor = `rgb(${randNum()},${randNum()},${randNum()})`;
+}
+
+var myTimer = setInterval(changeColor, 3000);
+var running = true;
