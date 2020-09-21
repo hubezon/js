@@ -1,0 +1,7 @@
+var img_name = new Array("img/name.svg", "img/name1.svg", "img/name2.svg", "img/name3.svg");
+
+var l = img_name.length;
+
+var rnd_no = Math.floor(l * Math.random());
+
+document.getElementById("placeTheIDhere").src = img_name[rnd_no];
